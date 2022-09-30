@@ -22,5 +22,7 @@ public class Main {
             System.err.println("Félkész könyvet nem fogadok el");
         }
         sc.nextLine();
+
+        //Cambiar a español / Changing to spanish
     }
 }
