@@ -23,6 +23,6 @@ public class Main {
         }
         sc.nextLine();
 
-        //Cambiar a español / Changing to spanish
+
     }
 }
