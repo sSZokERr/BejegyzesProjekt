@@ -1,7 +1,6 @@
 package com_package_bejegyzes_projekt;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Bejegyzes {
     private String szerzo;
@@ -26,7 +25,7 @@ public class Bejegyzes {
     public String getTartalom(){
         return this.tartalom;
     }
-    public void setTartalom(){
+    public void setTartalom(String ujTartalom){
         this.szerkesztve = LocalDate.now();
         this.isChanged = true;
         this.tartalom = tartalom;

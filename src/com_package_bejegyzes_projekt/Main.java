@@ -51,6 +51,15 @@ public class Main {
             bejegyzesList.getBejegyzesek().get(rnd-1).like();
         }
 
+        System.out.println("Módositsd a 2. szöveg tartalmát!");
+        String ujTartalom2 = sc.nextLine();
+        bejegyzesList.getBejegyzesek().get(1).setTartalom(ujTartalom2);
 
+        System.out.println(bejegyzesList);
+
+
+        for (int i = 0; i < bejegyzesList.getBejegyzesek().size(); i++){
+
+        }
     }
 }
