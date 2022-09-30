@@ -57,9 +57,14 @@ public class Main {
 
         System.out.println(bejegyzesList);
 
-
+        int sorszam = 0;
+        int like = 0;
         for (int i = 0; i < bejegyzesList.getBejegyzesek().size(); i++){
-
+            if (bejegyzesList.getBejegyzesek().get(i).getLikeok() > like){
+                sorszam = i;
+                like = bejegyzesList.getBejegyzesek().get(i).getLikeok();
+            }
         }
+        System.out.printf("A legnépszerűbb könyv szerzője : %s \n%d likeot kapott",bejegyzesList.getBejegyzesek().get(sorszam).getSzerzo(), bejegyzesList.getBejegyzesek().get(sorszam).getLikeok());
     }
 }
