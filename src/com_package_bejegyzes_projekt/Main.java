@@ -22,7 +22,14 @@ public class Main {
             System.err.println("Félkész könyvet nem fogadok el");
         }
         sc.nextLine();
-
+        for (int i = 0; i < db;i++){
+            System.out.println("Add meg a nevedet!");
+            String nev = sc.nextLine();
+            System.out.println("Add meg a tratalmat!");
+            String tartalom = sc.nextLine();
+            Bejegyzes b3 = new Bejegyzes(nev,tartalom);
+            bejegyzesList.getBejegyzesek().add(b3);
+        }
 
     }
 }
