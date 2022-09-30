@@ -73,5 +73,13 @@ public class Main {
             System.out.println();
             System.out.println("Nincs 35 like feletti könyv");
         }
+
+        int quantity = 0;
+        for (int i = 0; i < bejegyzesList.getBejegyzesek().size(); i++){
+            if (bejegyzesList.getBejegyzesek().get(i).getLikeok() < 15){
+                quantity++;
+            }
+        }
+        System.out.printf("%d könyv kapott kevesebb mint 15 likeot");
     }
 }
