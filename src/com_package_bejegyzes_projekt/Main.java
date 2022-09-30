@@ -66,5 +66,12 @@ public class Main {
             }
         }
         System.out.printf("A legnépszerűbb könyv szerzője : %s \n%d likeot kapott",bejegyzesList.getBejegyzesek().get(sorszam).getSzerzo(), bejegyzesList.getBejegyzesek().get(sorszam).getLikeok());
+
+        if (like > 35){
+            System.out.printf("Van ilyen könyv, %d likeot kapott",like);
+        }else {
+            System.out.println();
+            System.out.println("Nincs 35 like feletti könyv");
+        }
     }
 }
