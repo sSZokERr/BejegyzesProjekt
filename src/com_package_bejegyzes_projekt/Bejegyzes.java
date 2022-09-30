@@ -43,4 +43,16 @@ public class Bejegyzes {
     public void like(){
         this.likeok += 1;
     }
+    public boolean getIsChanged(){
+        return this.isChanged;
+    }
+
+    @Override
+    public String toString() {
+        if (this.getIsChanged()){
+            return String.format("%s - %d - %s \nSzerkesztve: %s \n%s ",this.getSzerzo(),this.getLikeok(), this.getLetrejott(), this.getSzerkesztve(), this.getTartalom());
+        }else {
+            return String.format("%s - %d - %s \n%s \n",this.szerzo, this.getLikeok(), this.getLetrejott(), this.getTartalom());
+        }
+    }
 }
