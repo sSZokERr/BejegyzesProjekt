@@ -37,4 +37,10 @@ public class Bejegyzes {
     public LocalDate getLetrejott(){
         return this.letrejott;
     }
+    public LocalDate getSzerkesztve(){
+        return this.szerkesztve;
+    }
+    public void like(){
+        this.likeok += 1;
+    }
 }
