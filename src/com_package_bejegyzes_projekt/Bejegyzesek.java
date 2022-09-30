@@ -29,6 +29,9 @@ public class Bejegyzesek {
         br.close();
         fr.close();
     }
+    public List<Bejegyzes> getBejegyzesek(){
+        return bejegyzesek;
+    }
 
 
 }
